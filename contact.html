@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Manfex</title>
+</head>
+
+<body>
+    <main>
+        <nav class="navbar navbar-expand-lg navbar-dark mb-4">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/Images/manfex-name.png" id="nav-logo" class="rounded img-fluid" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- These nav links can go on the service page -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section id="contact-section">
+            <div class="container col-md-12 col-xl-9">
+                <div class="row">
+                    <div class="col-8" id="contact-details-col">
+                        <h1>Contact Details</h1>
+                        <div class="mx-4">
+                            <h5 id="mario-name">Mario E Moural Garcez Palha</h5>
+                            <h5 id="mario-email">mario@manfx.co.za</h5>
+                            <h5 id="mario-phone" class="mb-4">+27 82 950 7988</h5>
+                        </div>
+
+                        <h1>Make an Inquiry</h1>
+                        <form id="inquiry-form">
+                            <div class="mx-4">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name:</label>
+                                    <input type="text" class="form-control" id="name" name="inquirer_name" required placeholder="Enter your name here...">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email address:</label>
+                                    <input type="email" class="form-control" id="email" name="inquirer_email" required placeholder="Enter your email here...">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="inquiry" class="form-label">Inquiry</label>
+                                    <textarea id="inquiry" cols="30" rows="10" class="form-control" name="inquiry" required placeholder="Make your inquiry. Specify your company if applicable..."></textarea>
+                                </div>
+                                <button type="submit" class="btn CTA-btn py-2 px-4">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-4 background-image-col"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="mt-5">
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="shared.js"></script>
+    <script src="contact.js"></script>
+</body>
+
+</html>

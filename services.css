@@ -1,0 +1,42 @@
+body {
+    overflow-x: hidden;
+}
+
+p {
+    padding: 0 5rem 0 5rem;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+.service {
+    opacity: 0;
+    transition: all 700ms ease;
+}
+
+.image-container {
+    max-width: 35rem;
+}
+
+.service-image {
+    box-shadow: 0 0 15px 0px #c0c0c0;
+    margin-bottom: 4rem;
+}
+
+.service:nth-child(1n) {
+    transform: translateX(15%);
+}
+
+.service:nth-child(2n) {
+    transform: translateX(-15%);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0) !important;
+}
+
+hr {
+    margin: 0;
+}

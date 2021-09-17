@@ -1,0 +1,18 @@
+.background-image-col {
+    height: 80vh;
+    background-color: #8ac8ff34;
+    background-image: url('assets/Images/background.png');
+    background-size: 25rem;
+    border-radius: 0.8rem;
+}
+
+main {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mario-image {
+    box-shadow: 0 0 15px 0px #a1b9bd;
+}
