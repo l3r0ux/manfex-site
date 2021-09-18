@@ -178,7 +178,7 @@ body {
     }
 }
 
-@media (max-width: 992px) { 
+@media (max-width: 992px) {
     .service {
         display: flex;
         flex-direction: column;
@@ -194,5 +194,11 @@ body {
 
     .service hr {
         order: 3;
+    }
+}
+
+@media (max-width: 768px) {
+    .background-image-col {
+        display: none;
     }
 }
