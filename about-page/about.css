@@ -1,3 +1,10 @@
+body {
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .background-image-col {
     background-color: #8ac8ff34;
     background-image: url('https://res.cloudinary.com/djkyfcfl1/image/upload/v1631967731/manfex_assets/background_llr1ws.png');
