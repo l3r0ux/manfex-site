@@ -5,7 +5,7 @@ body {
 }
 
 #nav-logo {
-    width: 12rem;
+    max-width: 12rem;
     transition: all 500ms ease;
 }
 
@@ -81,6 +81,13 @@ body {
     color: #7bb449;
 }
 
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    .modal-overlay {
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+    }
+}
+
 .modal-overlay {
     opacity: 0;
     visibility: hidden;
@@ -91,7 +98,7 @@ body {
     left: 0;
     width: 100%;
     height: 100vh;
-    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.486);
     display: flex;
     justify-content: center;
     align-items: center;
