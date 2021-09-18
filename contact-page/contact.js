@@ -14,7 +14,7 @@ inquiryForm.addEventListener("submit", (event) => {
 
     emailjs.sendForm('service_cisfsn8', 'inquiry_template', inquiryForm)
         .then(function () {
-            statusText.innerText = "Email Sent";
+            statusText.innerText = "Message Sent";
             setTimeout(() => {
                 modalOverlay.classList.remove('visible');
             }, 2000)
