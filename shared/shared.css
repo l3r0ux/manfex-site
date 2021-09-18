@@ -192,6 +192,10 @@ body {
     }
 
     .service {
+        transform: translateY(10%) !important;
+    }
+
+    .service {
         display: flex;
         flex-direction: column;
     }
