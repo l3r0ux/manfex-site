@@ -5,6 +5,7 @@ p {
 body {
     margin-top: 7rem;
     background-color: #f7f8f9;
+    overflow-x: hidden;
 }
 
 #nav-logo {
@@ -41,10 +42,28 @@ body {
 }
 
 #footer {
+    padding-top: 1rem;
     width: 100%;
-    height: 15rem;
     background-color: #001f5d;
     box-shadow: 0 -1px 20px 0 #001f5d;
+}
+
+.quick-links-container a {
+    text-decoration: none;
+    color: white;
+    transition: all 200ms ease;
+}
+.quick-links-container a:hover {
+    text-decoration: none;
+    color: white;
+    color: #7bb449;
+}
+
+.address-container {
+    color: white;
+}
+.quick-links-container {
+    color: white;
 }
 
 .CTA-btn {
@@ -59,4 +78,102 @@ body {
     border: 3px solid #7bb449;
     background-color: transparent;
     color: #7bb449;
+}
+
+.modal-overlay {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 200ms ease;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-overlay img {
+    width: 5rem;
+}
+
+.visible {
+    opacity: 1 !important;
+    visibility: visible !important;
+    z-index: 100 !important;
+}
+
+.arrow {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#blue-arrow {
+    z-index: 3;
+    animation-name: blue-arrow-loading;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+}
+
+#cyan-arrow {
+    z-index: 2;
+    animation-name: cyan-arrow-loading;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+    animation-delay: 100ms;
+    transform: translate(-50%, -100%);
+}
+
+#green-arrow {
+    z-index: 1;
+    animation-name: green-arrow-loading;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+    animation-delay: 200ms;
+    transform: translate(-50%, -80%);
+}
+
+.modal-overlay h5 {
+    transform: translateY(4rem);
+}
+
+@keyframes blue-arrow-loading {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+    50% {
+        transform: translate(-50%, -80%);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+@keyframes cyan-arrow-loading {
+    0% {
+        transform: translate(-50%, -100%);
+    }
+    50% {
+        transform: translate(-50%, -130%);
+    }
+    100% {
+        transform: translate(-50%, -100%);
+    }
+}
+@keyframes green-arrow-loading {
+    0% {
+        transform: translate(-50%, -80%);
+    }
+    50% {
+        transform: translate(-50%, -120%);
+    }
+    100% {
+        transform: translate(-50%, -80%);
+    }
 }

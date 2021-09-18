@@ -1,4 +1,6 @@
 const inquiryForm = document.getElementById("inquiry-form");
+const modalOverlay = document.querySelector(".modal-overlay");
+const statusText = document.querySelector(".modal-overlay h5");
 
 // Init email.js
 (function () {
@@ -6,13 +8,24 @@ const inquiryForm = document.getElementById("inquiry-form");
 })();
 
 inquiryForm.addEventListener("submit", (event) => {
-    console.log(this);
     event.preventDefault();
+    modalOverlay.classList.add('visible');
+    statusText.innerText = "Sending...";
 
     emailjs.sendForm('service_cisfsn8', 'inquiry_template', inquiryForm)
         .then(function () {
-            console.log("Success")
+            statusText.innerText = "Email Sent";
+            setTimeout(() => {
+                modalOverlay.classList.remove('visible');
+            }, 2000)
+
         }, function (error) {
-            console.log("Failed")
+            statusText.innerText = "An Error Occured";
+            setTimeout(() => {
+                modalOverlay.classList.remove('visible');
+            }, 2000)
+            
         })
+
+        inquiryForm.reset();
 })
