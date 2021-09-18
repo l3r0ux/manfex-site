@@ -1,15 +1,16 @@
-/* Color Pallet
-darkblue: #001f5d
-green: #517c2c
-lightblue: #518abf
-lightgray: #f7f8f9
-*/
-
 #hero-section {
     background-color: #8ac8ff34;
     background-image: url('assets/Images/background.png');
     background-size: 38rem;
     box-shadow: 10px 0 20px #8ac8ff34;
+}
+
+#hero-text {
+    font-size: 1.2rem;
+}
+
+#slogan {
+    margin: 1rem 0 1rem 0;
 }
 
 #hero-image {
