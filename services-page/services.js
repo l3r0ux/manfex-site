@@ -1,11 +1,13 @@
 const serviceContainers = document.querySelectorAll(".service");
 
+console.log(window.innerWidth)
+
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const scrollToServiceId = urlParams.get('scrollTarget');
 if (scrollToServiceId) {
     const scrollToService = document.getElementById(scrollToServiceId);
-    scrollToService.scrollIntoView({behaviour: 'smooth', block: 'center'});
+    window.scrollTo(0, scrollToService.offsetTop - scrollToService.offsetHeight / 4.5);
 }
 
 window.addEventListener("scroll", (event) => {
