@@ -52,19 +52,25 @@ body {
 }
 
 .footer-text {
+    color: white;
     margin-bottom: 0.3rem;
 }
 
-.quick-links-container a {
+.quick-links-container a,
+.footer-text a {
     text-decoration: none;
     color: white;
     -webkit-transition: all 200ms ease;
     -o-transition: all 200ms ease;
     transition: all 200ms ease;
 }
-.quick-links-container a:hover {
-    text-decoration: none;
-    color: white;
+
+.footer-text .creators-link {
+    color: #00b7ff;
+}
+
+.quick-links-container a:hover,
+.footer-text a:hover {
     color: #7bb449;
 }
 
