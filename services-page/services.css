@@ -8,6 +8,8 @@ h2 {
 
 .service {
     opacity: 0;
+    -webkit-transition: all 700ms ease;
+    -o-transition: all 700ms ease;
     transition: all 700ms ease;
 }
 
@@ -16,21 +18,28 @@ h2 {
 }
 
 .service-image {
-    box-shadow: 0 0 15px 0px #c0c0c0;
+    -webkit-box-shadow: 0 0 15px 0px #c0c0c0;
+            box-shadow: 0 0 15px 0px #c0c0c0;
     margin-bottom: 4rem;
 }
 
 .service:nth-child(1n) {
-    transform: translateX(15%);
+    -webkit-transform: translateX(15%);
+        -ms-transform: translateX(15%);
+            transform: translateX(15%);
 }
 
 .service:nth-child(2n) {
-    transform: translateX(-15%);
+    -webkit-transform: translateX(-15%);
+        -ms-transform: translateX(-15%);
+            transform: translateX(-15%);
 }
 
 .visible {
     opacity: 1;
-    transform: translateX(0) !important;
+    -webkit-transform: translateX(0) !important;
+        -ms-transform: translateX(0) !important;
+            transform: translateX(0) !important;
 }
 
 hr {

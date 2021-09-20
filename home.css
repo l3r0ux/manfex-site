@@ -2,7 +2,8 @@
     background-color: #8ac8ff34;
     background-image: url('https://res.cloudinary.com/djkyfcfl1/image/upload/v1631967731/manfex_assets/background_llr1ws.png');
     background-size: 38rem;
-    box-shadow: 10px 0 20px #8ac8ff34;
+    -webkit-box-shadow: 10px 0 20px #8ac8ff34;
+            box-shadow: 10px 0 20px #8ac8ff34;
 }
 
 #hero-text {
@@ -22,12 +23,16 @@
     background-color: white;
     border-radius: 0.5rem;
     margin: 0.5rem;
+    -webkit-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
     transition: all 200ms ease;
-    box-shadow: 0 0 15px #7bb44981;
+    -webkit-box-shadow: 0 0 15px #7bb44981;
+            box-shadow: 0 0 15px #7bb44981;
 }
 
 .service-container:hover {
-    box-shadow: 0 0 15px #64aaeb;
+    -webkit-box-shadow: 0 0 15px #64aaeb;
+            box-shadow: 0 0 15px #64aaeb;
 }
 
 .service-container img {
