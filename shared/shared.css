@@ -2,6 +2,7 @@ body {
     margin-top: 7rem;
     background-color: #f7f8f9;
     overflow-x: hidden;
+    font-size: 1.1rem;
 }
 
 #nav-logo {
@@ -298,6 +299,10 @@ body {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
+    }
+
+    .service-image {
+        width: 100%;
     }
 
     .description {

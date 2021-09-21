@@ -21,6 +21,7 @@ h2 {
     -webkit-box-shadow: 0 0 15px 0px #c0c0c0;
             box-shadow: 0 0 15px 0px #c0c0c0;
     margin-bottom: 4rem;
+    max-width: 25rem;
 }
 
 .service:nth-child(1n) {
