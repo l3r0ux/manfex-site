@@ -118,15 +118,6 @@ body {
     width: 100%;
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.486);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
 }
 .modal-overlay img {
     width: 5rem;
@@ -139,8 +130,17 @@ body {
 }
 
 .arrow {
-    position: fixed;
-    top: 50%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+.modal-overlay h5 {
+    position: absolute;
+    top: 55%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -191,12 +191,6 @@ body {
     -webkit-transform: translate(-50%, -80%);
         -ms-transform: translate(-50%, -80%);
             transform: translate(-50%, -80%);
-}
-
-.modal-overlay h5 {
-    -webkit-transform: translateY(4rem);
-        -ms-transform: translateY(4rem);
-            transform: translateY(4rem);
 }
 
 @-webkit-keyframes blue-arrow-loading {
