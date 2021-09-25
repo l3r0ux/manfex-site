@@ -168,8 +168,6 @@ body {
             animation-duration: 1000ms;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
-    -webkit-animation-delay: 0;
-            animation-delay: 0;
     -webkit-animation-delay: 100ms;
             animation-delay: 100ms;
     -webkit-transform: translate(-50%, -100%);
@@ -185,8 +183,6 @@ body {
             animation-duration: 1000ms;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
-    -webkit-animation-delay: 0;
-            animation-delay: 0;
     -webkit-animation-delay: 200ms;
             animation-delay: 200ms;
     -webkit-transform: translate(-50%, -80%);
